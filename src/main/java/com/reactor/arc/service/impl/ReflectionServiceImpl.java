@@ -5,10 +5,10 @@ import java.lang.reflect.Field;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ReflectionUtils;
 
-import com.reactor.arc.service.Reflection;
+import com.reactor.arc.service.ReflectionService;
 
 @Service
-public class ReflectionImpl implements Reflection {
+public class ReflectionServiceImpl implements ReflectionService {
 
 	@Override
 	public void setField(Class<?> className, Object object, String fieldName, Object fieldValue) {
