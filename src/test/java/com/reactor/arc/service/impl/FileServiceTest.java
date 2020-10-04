@@ -43,5 +43,10 @@ public class FileServiceTest {
 		System.out.print(obj);
 		assertNotNull(obj);
 	}
-
+	
+	public void noTest() {
+//		ConfigurableApplicationContext context=SpringApplication.run(AnnotationDemoApp.class, args);
+//		Object theCoach= context.getBean("tennisCoach",Coach.class);
+//		context.close();
+	}
 }
