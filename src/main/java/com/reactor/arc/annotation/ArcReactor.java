@@ -10,13 +10,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 import com.reactor.arc.configuration.ArcReactorConfiguration;
+import com.reactor.arc.configuration.WebConfiguration;
 
 
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Documented
-@Import({ArcReactorConfiguration.class})
+@Import({ArcReactorConfiguration.class,WebConfiguration.class})
 @Configuration
 public @interface ArcReactor {
 }
